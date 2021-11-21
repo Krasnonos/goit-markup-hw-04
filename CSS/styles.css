@@ -95,6 +95,8 @@ button{
     color: var(--accent-color);
 }
 .contact-link {
+    display: flex;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 500;
@@ -108,12 +110,28 @@ button{
 .contact-link:focus {
     color: var(--accent-color);
 }
+.icon-envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.icon-smartphone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
 /* main content page studio*/
 /* hero-section */
 .hero-section {
     padding-bottom: 200px;
     padding-top:200px;
     background-color: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-section-text {
     font-weight: 900;
@@ -154,6 +172,7 @@ button{
 }
 .advantages-section .list{
     max-width: 1170px;
+    display: flex;
 }
 .advantages-section .item{
     max-width: 270px;
@@ -161,8 +180,14 @@ button{
 .advantages-section .item:not(:last-child){
     margin-right: 30px;
 }
-.advantages-section .list{
+.icons-advanteges{
     display: flex;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 .advantages-title {
     margin-bottom: 10px;
@@ -250,6 +275,31 @@ button{
     line-height: 1.19;
     color: var(--black-important-color);
 }
+.social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.social-item{
+    width: 44px;
+    height: 44px;
+}
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: darkblue;
+}
+.social-icon{
+    width: 100%;
+    height: 100%;
+}
+
 /* footer */
 .footer {
     background-color: #2f303a;
